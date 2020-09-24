@@ -77,10 +77,10 @@ class Piggy(PiggyParent):
 
     def the_twister(self):
         for x in range(4):
-            self.right(360)
+            self.right(primary=360, counter=0)
             time.sleep(.1)
             self.stop()
-            self.left(360)
+            self.left(primary=360, counter=0)
             time.sleep(.1)
     
     def safe_to_dance(self):

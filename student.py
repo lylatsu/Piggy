@@ -69,7 +69,7 @@ class Piggy(PiggyParent):
         # self.head_bob()
 
     def bunny_hop(self):
-        for x in range(4):
+        for x in range(8):
             self.fwd()
             time.sleep(.1)
             self.stop()

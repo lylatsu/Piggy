@@ -63,12 +63,12 @@ class Piggy(PiggyParent):
         #lower-ordered example..
         
         for x in range(6):
-            self.boogie_down()
+            self.bunny_hop()
             self.the_twister()
         # self.moonwalk()
         # self.head_bob()
 
-    def boogie_down(self):
+    def bunny_hop(self):
         for x in range(4):
             self.fwd()
             time.sleep(.1)
@@ -79,11 +79,12 @@ class Piggy(PiggyParent):
 
     def the_twister(self):
         for x in range(4):
-            self.right(primary=360, counter=0)
-            time.sleep(.1)
+            self.turn_by_deg(360)
+            time.sleep(.2)
             self.stop()
-            self.left(primary=360, counter=0)
-            time.sleep(.1)
+            time.speep(.2)
+            self.turn_by_def(-360)
+            time.sleep(.2)
     
     def safe_to_dance(self):
         """ Does a 360 distance check and returns true if safe """

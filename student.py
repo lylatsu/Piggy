@@ -69,7 +69,7 @@ class Piggy(PiggyParent):
         # self.head_bob()
 
     def bunny_hop(self):
-        for x in range(5):
+        for x in range(1):
             self.fwd()
             time.sleep(.1)
             self.stop()
@@ -78,12 +78,12 @@ class Piggy(PiggyParent):
             time.sleep(.1)
 
     def the_twister(self):
-        for x in range(5):
-            self.turn_by_deg(360)
+        for x in range(1):
+            self.turn_by_deg(180)
             time.sleep(.2)
             self.stop()
             time.sleep(.2)
-            self.turn_by_deg(-360)
+            self.turn_by_deg(-180)
             time.sleep(.2)
     
     def safe_to_dance(self):

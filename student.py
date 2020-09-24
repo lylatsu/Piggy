@@ -71,9 +71,11 @@ class Piggy(PiggyParent):
     def boogie_down(self):
         for x in range(4):
             self.fwd()
-            time.sleep(.2)
+            time.sleep(.1)
             self.stop()
-            time.sleep(.2)
+            time.sleep(.1)
+            self.back()
+            time.sleep(.1)
 
     def the_twister(self):
         for x in range(4):

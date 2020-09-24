@@ -82,7 +82,7 @@ class Piggy(PiggyParent):
             self.turn_by_deg(360)
             time.sleep(.2)
             self.stop()
-            time.speep(.2)
+            time.sleep(.2)
             self.turn_by_def(-360)
             time.sleep(.2)
     

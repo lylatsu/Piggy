@@ -76,8 +76,6 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.fwd()
             time.sleep(.1)
-            self.back()
-            time.sleep(.1)
             self.stop()
 
     def the_twister(self):
@@ -91,6 +89,7 @@ class Piggy(PiggyParent):
         for x in range(1):
             self.back()
             self.sleep(.2)
+            self.stop()
             self.back()
             self.sleep(.2)
             self.stop()

@@ -92,6 +92,8 @@ class Piggy(PiggyParent):
             self.back()
             time.sleep(.3)
             self.stop()
+            self.turn_by_deg(-180)
+            self.back()
             time.sleep(.2)
             self.back()
             time.sleep(.3)

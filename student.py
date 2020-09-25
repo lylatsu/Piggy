@@ -62,7 +62,7 @@ class Piggy(PiggyParent):
         
         #lower-ordered example..
         
-        for x in range(5):
+        for x in range(6):
             self.bunny_hop()
             self.the_twister()
             self.moonwalk()
@@ -85,14 +85,13 @@ class Piggy(PiggyParent):
             self.turn_by_deg(-180)
             time.sleep(.2)
             self.stop()
+            self.turn_by_deg(180)
             time.sleep(.2)
+            self.stop()
 
     def moonwalk(self):
         for x in range(1):
-            self.back()
-            self.sleep(.2)
-            self.stop()
-            self.back()
+            self.back(3)
             self.sleep(.2)
             self.stop()
             

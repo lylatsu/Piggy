@@ -89,7 +89,6 @@ class Piggy(PiggyParent):
     def moonwalk(self):
         for x in range(1):
             self.back()
-            self.sleep(.2)
             self.stop()
             
     def safe_to_dance(self):

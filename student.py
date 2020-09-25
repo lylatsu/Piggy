@@ -66,7 +66,7 @@ class Piggy(PiggyParent):
             self.bunny_hop()
             self.the_twister()
             self.moonwalk()
-        # self.head_bob()
+        # self.back_it_up()
 
     def bunny_hop(self):
         for x in range(1):
@@ -75,12 +75,6 @@ class Piggy(PiggyParent):
             self.fwd()
             time.sleep(.1)
             self.stop()
-            self.fwd()
-            time.sleep(.1)
-            self.back()
-            time.sleep(.1)
-            self.back()
-            time.sleep(.1)
 
     def the_twister(self):
         for x in range(1):

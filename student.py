@@ -74,18 +74,25 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.fwd()
             time.sleep(.1)
+            self.fwd()
+            time.sleep(.1)
+            self.back()
+            time.sleep(.1)
             self.stop()
 
     def the_twister(self):
         for x in range(1):
-            self.turn_by_deg(180)
-            time.sleep(.1)
+            self.turn_by_deg(-180)
+            time.sleep(.2)
             self.stop()
-            time.sleep(.1)
+            time.sleep(.2)
 
     def moonwalk(self):
         for x in range(1):
             self.back()
+            self.sleep(.2)
+            self.back()
+            self.sleep(.2)
             self.stop()
             
     def safe_to_dance(self):

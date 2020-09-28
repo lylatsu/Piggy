@@ -72,6 +72,7 @@ class Piggy(PiggyParent):
         """small short hop"""
         for x in range(2):
             self.fwd()
+            self.servo(1000)
             time.sleep(.1)
             self.stop()
             self.fwd()
@@ -85,6 +86,7 @@ class Piggy(PiggyParent):
         """turn to the left 180 degress"""
         for x in range(1):
             self.turn_by_deg(-180)
+            self.servo(2000)
             time.sleep(.1)
             self.stop()
             self.turn_by_deg(180)

@@ -70,7 +70,7 @@ class Piggy(PiggyParent):
 
     def bunny_hop(self):
         """small short hop"""
-        for x in range(1):
+        for x in range(3):
             self.fwd()
             time.sleep(.1)
             self.stop()
@@ -92,11 +92,17 @@ class Piggy(PiggyParent):
             self.stop()
     
     def moonwalk(self):
-        """glide straight back like michael"""
-        for x in range(1):
-            self.back(3)
-            time.sleep(.2)
+        """glide straight back"""
+        for x in range(2):
+            self.back()
+            time.sleep(2)
             self.stop()
+            self.turn_by_deg(-45)
+            time.sleep(.1)
+            self.turn_by_deg(45)
+
+    def jig(self):
+        
             
     def safe_to_dance(self):
         """Does a 360 distance check and returns true if safe"""

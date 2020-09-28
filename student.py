@@ -85,10 +85,10 @@ class Piggy(PiggyParent):
         """turn to the left 180 degress"""
         for x in range(1):
             self.turn_by_deg(-180)
-            time.sleep(.1)
+            time.sleep(.3)
             self.stop()
             self.turn_by_deg(180)
-            time.sleep(.1)
+            time.sleep(.3)
             self.stop()
     
     def moonwalk(self):
@@ -100,6 +100,7 @@ class Piggy(PiggyParent):
             self.turn_by_deg(-45)
             time.sleep(.1)
             self.turn_by_deg(45)
+            self.stop()
         
             
     def safe_to_dance(self):

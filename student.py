@@ -93,14 +93,17 @@ class Piggy(PiggyParent):
     
     def moonwalk(self):
         """glide straight back"""
-        for x in range(2):
+        for x in range(1):
             self.back()
+            self.servo(1000)
             time.sleep(1)
             self.stop()
             self.turn_by_deg(-45)
             time.sleep(1)
             self.turn_by_deg(45)
             self.stop()
+
+    def 
         
             
     def safe_to_dance(self):

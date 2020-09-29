@@ -125,8 +125,13 @@ class Piggy(PiggyParent):
             self.fwd()
             self.servo(1000)
             time.sleep(1)
-            deg_fwd(90)
+            self.right()
             time.sleep(.5)
+            self.fwd()
+            self.servo(2000)
+            time.sleep(1)
+            self.left()
+            time.sleep(1)
             self.stop()
 
     def shake(self):

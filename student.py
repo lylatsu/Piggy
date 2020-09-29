@@ -118,7 +118,7 @@ class Piggy(PiggyParent):
                 self.turn_by_deg(90)
         # after all checks have been done. We deduce it's safe
                 print("SAFE TO DANCE!")
-                return True
+        return True
 
     def shake(self):
         self.deg_fwd(720)

@@ -67,7 +67,7 @@ class Piggy(PiggyParent):
             self.bunny_hop()
             self.the_twister()
             self.moonwalk()
-            # self.tango()
+            self.tango()
 
     def bunny_hop(self):
         """small short hop"""
@@ -119,6 +119,15 @@ class Piggy(PiggyParent):
         # after all checks have been done. We deduce it's safe
                 print("SAFE TO DANCE!")
         return True
+
+    def tango(self):
+        for x in range(1):
+            self.fwd()
+            self.servo(1000)
+            time.sleep(1)
+            deg_fwd(90)
+            time.sleep(.5)
+            self.stop()
 
     def shake(self):
         self.deg_fwd(720)

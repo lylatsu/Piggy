@@ -152,7 +152,7 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.stop()
 
-    # thanks quinny
+    # thanks quinny for the shuffle
     def shuffle(self):
         for x in range(12):
             self.right(primary=-60, counter=0)

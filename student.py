@@ -69,7 +69,7 @@ class Piggy(PiggyParent):
             self.moonwalk()
             self.tango()
             self.headbob()
-            self.shuffle()
+            self.quinnshuffle()
 
     def bunny_hop(self):
         """small short hop"""
@@ -153,7 +153,7 @@ class Piggy(PiggyParent):
             self.stop()
 
     # thanks quinny for the shuffle
-    def shuffle(self):
+    def quinnshuffle(self):
         for x in range(12):
             self.right(primary=-60, counter=0)
             time.sleep(.1)

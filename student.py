@@ -124,14 +124,16 @@ class Piggy(PiggyParent):
         for x in range(1):
             self.fwd()
             self.servo(1000)
-            time.sleep(.5)
+            time.sleep(.3)
             self.right()
-            time.sleep(.5)
+            time.sleep(.3)
             self.left()
             self.servo(2000)
-            time.sleep(.5)
+            time.sleep(.3)
             self.fwd()
-            time.sleep(.5)
+            time.sleep(.3)
+            self.right()
+            time.sleep(.3)
             self.stop()
 
     def shake(self):

@@ -71,7 +71,7 @@ class Piggy(PiggyParent):
 
     def bunny_hop(self):
         """small short hop"""
-        for x in range(2):
+        for x in range(1):
             self.fwd()
             self.servo(1000)
             time.sleep(.1)

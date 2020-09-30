@@ -123,6 +123,7 @@ class Piggy(PiggyParent):
         return True
 
     def tango(self):
+        """Forward and slow shimmy to the right and left"""
         for x in range(1):
             self.fwd()
             self.servo(1000)
@@ -141,6 +142,7 @@ class Piggy(PiggyParent):
             self.stop()
 
     def headbob(self):
+        """head shake"""
         for x in range(1):
             self.servo(1000)
             time.sleep(.1)
@@ -154,6 +156,7 @@ class Piggy(PiggyParent):
 
     # thanks quinny for the shuffle
     def quinnshuffle(self):
+        """head shake and backward scoot shimmy"""
         for x in range(12):
             self.right(primary=-60, counter=0)
             time.sleep(.1)

@@ -141,7 +141,7 @@ class Piggy(PiggyParent):
             self.stop()
 
     def headbob(self):
-        for x in range(3):
+        for x in range(1):
             self.servo(1000)
             time.sleep(.1)
             self.servo(2000)
@@ -159,6 +159,7 @@ class Piggy(PiggyParent):
             time.sleep(.1)
             self.left(primary=-60, counter=0)
             time.sleep(.1)
+            self.stop
 
     def shake(self):
         self.deg_fwd(720)

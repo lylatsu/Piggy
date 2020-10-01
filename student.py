@@ -124,7 +124,7 @@ class Piggy(PiggyParent):
 
     def tango(self):
         """Forward and slow shimmy to the right and left"""
-        for x in range(3):
+        for x in range(2):
             self.fwd()
             self.servo(1000)
             time.sleep(.3)
@@ -143,7 +143,7 @@ class Piggy(PiggyParent):
 
     def boogie(self):
         """bust down"""
-        for x in range(3):
+        for x in range(1):
             self.right(primary=-30, counter=0)
             time.sleep(.2)
             self.left(primary=-30, counter=0)

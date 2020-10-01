@@ -70,6 +70,7 @@ class Piggy(PiggyParent):
             self.tango()
             self.boogie()
             self.quinnshuffle()
+        self.stop()
 
     def bunny_hop(self):
         """small short hop"""

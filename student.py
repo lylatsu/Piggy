@@ -68,7 +68,7 @@ class Piggy(PiggyParent):
             self.the_twister()
             self.moonwalk()
             self.tango()
-            self.headbob()
+            self.boogie()
             self.quinnshuffle()
 
     def bunny_hop(self):
@@ -124,7 +124,7 @@ class Piggy(PiggyParent):
 
     def tango(self):
         """Forward and slow shimmy to the right and left"""
-        for x in range(1):
+        for x in range(3):
             self.fwd()
             self.servo(1000)
             time.sleep(.3)
@@ -141,18 +141,15 @@ class Piggy(PiggyParent):
             time.sleep(.3)
             self.stop()
 
-    def headbob(self):
+    def boogie(self):
         """head shake"""
-        for x in range(1):
-            self.servo(1000)
-            time.sleep(.1)
-            self.servo(2000)
-            time.sleep(.1)
-            self.servo(1000)
-            time.sleep(.1)
-            self.servo(2000)
-            time.sleep(.1)
-            self.stop()
+        for x in range(10):
+            self.right(primary=-30, counter=0)
+            time.sleep(.2)
+            self.left(primary=-30, counter=0)
+            time.sleep(.2)
+            self.stop
+            
 
     # thanks quinny for the shuffle
     def quinnshuffle(self):

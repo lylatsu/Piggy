@@ -142,8 +142,8 @@ class Piggy(PiggyParent):
             self.stop()
 
     def boogie(self):
-        """head shake"""
-        for x in range(6):
+        """bust down"""
+        for x in range(3):
             self.right(primary=-30, counter=0)
             time.sleep(.2)
             self.left(primary=-30, counter=0)

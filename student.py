@@ -143,11 +143,10 @@ class Piggy(PiggyParent):
 
     def boogie(self):
         """bust down"""
-        for x in range(1):
-            self.right(primary=-30, counter=0)
-            time.sleep(.2)
-            self.left(primary=-30, counter=0)
-            time.sleep(.2)
+        for x in range(3):
+            self.back()
+            self.servo(1000)
+            time.sleep(.3)
             self.stop
             
 

@@ -71,6 +71,7 @@ class Piggy(PiggyParent):
             self.boogie()
             self.quinnshuffle()
             self.spin
+            self.brennanwheelie
         self.stop()
 
 
@@ -169,6 +170,20 @@ class Piggy(PiggyParent):
             self.turn_by_deg(360)
             time.sleep(.1)
             self.stop
+
+    def brennanwheelie(self):
+        """pop a wheelie"""
+        for x in range(4):
+            self.fwd(right=100, left=100)
+            time.sleep(.5)
+            self.servo(1000)
+            time.sleep(.1)
+            self.servo(2000)
+            time.sleep(.1)
+            self.fwd(right=-100, left=-100)
+            time.sleep(.1)
+            self.servo(-1000)
+            self.stop()
 
     def shake(self):
         self.deg_fwd(360)

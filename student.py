@@ -76,7 +76,7 @@ class Piggy(PiggyParent):
 
     def bunny_hop(self):
         """small short forward movement"""
-        for x in range(1):
+        for x in range(3):
             self.fwd()
             self.servo(1000) #swivel head
             time.sleep(.1)
@@ -90,7 +90,7 @@ class Piggy(PiggyParent):
 
     def the_twister(self):
         """turn to the left 180 degress"""
-        for x in range(1):
+        for x in range(2):
             self.turn_by_deg(-180)
             self.servo(2000)
             time.sleep(.1)
@@ -101,7 +101,7 @@ class Piggy(PiggyParent):
     
     def moonwalk(self):
         """scoot straight back with head bob"""
-        for x in range(1):
+        for x in range(3):
             self.back()
             self.servo(1000)
             time.sleep(.5)
@@ -165,7 +165,7 @@ class Piggy(PiggyParent):
 
     def spin(self):
         """quick spin"""
-        for x in range(4):
+        for x in range(6):
             self.turn_by_deg(360)
             time.sleep(.1)
             self.stop

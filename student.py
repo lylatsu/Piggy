@@ -63,7 +63,7 @@ class Piggy(PiggyParent):
         
         #lower-ordered example..
         
-        for x in range(6):
+        for x in range(8):
             self.bunny_hop()
             self.the_twister()
             self.moonwalk()
@@ -73,7 +73,7 @@ class Piggy(PiggyParent):
         self.stop()
 
     def bunny_hop(self):
-        """small short hop"""
+        """small short forward movement"""
         for x in range(1):
             self.fwd()
             self.servo(1000)
@@ -98,7 +98,7 @@ class Piggy(PiggyParent):
             self.stop()
     
     def moonwalk(self):
-        """glide straight back with head bob"""
+        """scoot straight back with head bob"""
         for x in range(1):
             self.back()
             self.servo(1000)
@@ -143,7 +143,7 @@ class Piggy(PiggyParent):
             self.stop()
 
     def boogie(self):
-        """bust down"""
+        """smoothly glide back"""
         for x in range(4):
             self.back()
             self.servo(1000)

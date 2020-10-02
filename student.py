@@ -63,7 +63,7 @@ class Piggy(PiggyParent):
         
         #lower-ordered example..
         
-        for x in range(8):
+        for x in range(7):
             self.bunny_hop()
             self.the_twister()
             self.moonwalk()
@@ -158,6 +158,13 @@ class Piggy(PiggyParent):
             self.right(primary=-60, counter=0)
             time.sleep(.1)
             self.left(primary=-60, counter=0)
+            time.sleep(.1)
+            self.stop
+
+    def spin(self):
+        """quick spin"""
+        for x in range(1):
+            self.turn_by_deg(360)
             time.sleep(.1)
             self.stop
 

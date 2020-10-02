@@ -70,16 +70,18 @@ class Piggy(PiggyParent):
             self.tango()
             self.boogie()
             self.quinnshuffle()
+            self.spin
         self.stop()
+
 
     def bunny_hop(self):
         """small short forward movement"""
         for x in range(1):
             self.fwd()
-            self.servo(1000)
+            self.servo(1000) #swivel head
             time.sleep(.1)
             self.stop()
-            self.fwd()
+            self.fwd() #move forward
             time.sleep(.1)
             self.stop()
             self.fwd()
@@ -127,18 +129,18 @@ class Piggy(PiggyParent):
         """Forward and slow shimmy to the right and left"""
         for x in range(3):
             self.fwd()
-            self.servo(1000)
+            self.servo(1000) 
             time.sleep(.3)
             self.right()
             time.sleep(.3)
             self.left()
-            self.servo(2000)
+            self.servo(2000) #swivel head
             time.sleep(.3)
             self.fwd()
             time.sleep(.3)
-            self.right()
+            self.right() #boogie right
             time.sleep(.3)
-            self.left()
+            self.left() #boogie left
             time.sleep(.3)
             self.stop()
 

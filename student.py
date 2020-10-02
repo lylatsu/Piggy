@@ -63,7 +63,7 @@ class Piggy(PiggyParent):
         
         #lower-ordered example..
         
-        for x in range(7):
+        for x in range(8):
             self.bunny_hop()
             self.the_twister()
             self.moonwalk()

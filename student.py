@@ -214,6 +214,7 @@ class Piggy(PiggyParent):
                 print("I SEE SOMETHING!!")
                 elif dist > self.SAFE_DISTANCE and see_an_object:
                     see_an_object = False
+                    
                     print("I guess the object ended")
                 print("\nI saw %d objects" % count)
             

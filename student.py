@@ -215,7 +215,7 @@ class Piggy(PiggyParent):
                 
             
             print("ANGLE: %d | DIST: %d" % (angle, dist))
-            print("\nI saw %d objects" % count)
+        print("\nI saw %d objects" % count)
             self.turn_by_deg(90)
   
         # FIGURE OUT HOW MANY OBSTACLES THERE WERE

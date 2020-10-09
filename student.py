@@ -208,7 +208,7 @@ class Piggy(PiggyParent):
 
         for angle in self.scan_data:
             dist = self.scan_data[angle]
-            if dist < self.SAFE_DISTANCE and not_see_an_object:
+            if dist < self.SAFE_DISTANCE and not see_an_object:
                 see_an_object = True
                 count += 1
                 print("I SEE SOMETHING!!")

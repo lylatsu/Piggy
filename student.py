@@ -220,7 +220,7 @@ class Piggy(PiggyParent):
             
             print("ANGLE: %d | DIST: %d" % (angle, dist))
             print("\nI saw %d objects" % count)
-                self.turn_by_deg(90)
+            self.turn_by_deg(90)
 
 
     def quick_check(self):

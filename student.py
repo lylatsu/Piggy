@@ -291,6 +291,7 @@ class Piggy(PiggyParent):
             else:
                 self.fwd()
         
+        self.stop()
         # TODO: scan so we can decide left or right
         # TODO: average the right side of the scan dict
         # TODO: average the left side of the scan dict

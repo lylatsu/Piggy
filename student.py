@@ -268,7 +268,7 @@ class Piggy(PiggyParent):
         print("----TURNING UNTIL CLEAR!!!----")
         # make sure we're looking straight
         self.servo(self.MIDPOINT)
-        while self.read_distance() < self.SAFE_DISTANCE:
+        while self.read_distance() < self.SAFE_DISTANCE + 100:
             self.left(primary=40, counter=-40)
             time.sleep(.05)
         # stop motion before we end the method
@@ -291,9 +291,6 @@ class Piggy(PiggyParent):
                 self.stop()
                 # self.turn_until_clear()
                 if turn_count % 5 == 0:
-                    self.back()
-                    time.sleep(0.3)
-                    self.stop()   
                     self.turn_to_deg(exit_ang)
                 if 'l' in self.right_or_left():
                     self.turn_by_deg(-45)

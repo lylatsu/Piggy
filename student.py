@@ -227,16 +227,18 @@ class Piggy(PiggyParent):
     def obstacle_count(self):
         """Does a 360 scan and returns the number of obstacles it sees"""
         # do a scan of the area in front of the robot
-        count = 0
         for x in range(4):
             self.scan()
             see_an_object = False
+            count = 0
+            
             for angle in self.scan_data:
                 dist = self.scan_data[angle]
                 if dist < self.SAFE_DISTANCE and not see_an_object:
                     see_an_object = True
                     count += 1
                     print("I SEE SOMETHING!!")
+                    self.turn_by_deg(90)
                 elif dist > self.SAFE_DISTANCE and see_an_object:
                     see_an_object = False
                     print("I guess the object ended")
@@ -292,7 +294,7 @@ class Piggy(PiggyParent):
                 # self.turn_until_clear()
                 if turn_count % 5 == 0:
                     self.turn_to_deg(exit_ang)
-                if 'l' in self.right_or_left():
+                elif 'l' in self.right_or_left():
                     self.turn_by_deg(-45)
                 else:
                     self.turn_by_deg(45)

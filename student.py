@@ -293,7 +293,7 @@ class Piggy(PiggyParent):
                 self.stop()
                 time.sleep(.01)
                 self.back()
-                time.sleep(.7)
+                time.sleep(.5)
                 self.stop()
                 # self.turn_until_clear()
                 if turn_count % 5 == 0:

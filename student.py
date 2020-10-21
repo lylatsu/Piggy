@@ -291,7 +291,7 @@ class Piggy(PiggyParent):
             if not self.quick_check():
                 turn_count += 1
                 self.stop()
-                tine.sleep(.01)
+                time.sleep(.01)
                 self.back()
                 time.sleep(.7)
                 self.stop()

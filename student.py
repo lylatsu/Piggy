@@ -189,6 +189,8 @@ class Piggy(PiggyParent):
         time.sleep(.25) # give your head time to move
         self.servo(2000) # look left
 
+    # COOL IDEA: Do a 360 degree turn before going back and scan surroundings while doing so.
+    
     def scan(self):
         """Sweep the servo and populate the scan_data dictionary"""
         for angle in range(self.MIDPOINT-350, self.MIDPOINT+350, 30):
